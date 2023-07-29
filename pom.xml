@@ -80,6 +80,13 @@ under the License.
 			<version>${flink.version}</version>
 			<scope>${lib.scope}</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.flink/flink-csv -->
+		<dependency>
+			<groupId>org.apache.flink</groupId>
+			<artifactId>flink-csv</artifactId>
+			<version>${flink.version}</version>
+			<scope>${lib.scope}</scope>
+		</dependency>
 
 		<!-- Add connector dependencies here. They must be in the default scope (compile). -->
 
@@ -111,6 +118,22 @@ under the License.
 			<artifactId>log4j-core</artifactId>
 			<version>${log4j.version}</version>
 			<scope>runtime</scope>
+		</dependency>
+
+
+		<!-- test deps -->
+		<dependency>
+			<groupId>org.scalatest</groupId>
+			<artifactId>scalatest_${scala.binary.version}</artifactId>
+			<version>3.2.2</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.flink</groupId>
+			<artifactId>flink-test-utils-junit</artifactId>
+			<version>${flink.version}</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
