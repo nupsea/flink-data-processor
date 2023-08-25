@@ -6,7 +6,7 @@ import org.slf4j.{Logger, LoggerFactory}
 
 object BasicDataStream {
 
-  val logger: Logger = LoggerFactory.getLogger(getClass)
+  private val logger: Logger = LoggerFactory.getLogger(getClass)
 
   private def getBookData(env: StreamExecutionEnvironment): DataStream[BookDTO] = {
     val rawBooks = env.fromElements (
