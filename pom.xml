@@ -29,7 +29,7 @@ under the License.
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<flink.version>1.16.2</flink.version>
+		<flink.version>1.17.1</flink.version>
 		<target.java.version>11</target.java.version>
 		<scala.binary.version>2.12</scala.binary.version>
 		<scala.version>2.12.7</scala.version>
@@ -87,6 +87,34 @@ under the License.
 			<version>${flink.version}</version>
 			<scope>${lib.scope}</scope>
 		</dependency>
+
+		<!-- Parquet -->
+		<dependency>
+			<groupId>org.apache.flink</groupId>
+			<artifactId>flink-parquet</artifactId>
+			<version>${flink.version}</version>
+			<scope>${lib.scope}</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.flink</groupId>
+			<artifactId>flink-avro</artifactId>
+			<version>${flink.version}</version>
+			<scope>${lib.scope}</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.flink</groupId>
+			<artifactId>flink-connector-files</artifactId>
+			<version>1.17.1</version>
+		</dependency>
+
+
+<!--		<dependency>-->
+<!--			<groupId>com.sksamuel.avro4s</groupId>-->
+<!--			<artifactId>avro4s-core_2.12</artifactId>-->
+<!--			<version>4.1.1</version>-->
+<!--		</dependency>-->
 
 		<!-- Flink Kafka -->
 		<dependency>

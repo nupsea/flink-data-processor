@@ -5,10 +5,13 @@ import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
 import java.io.{BufferedReader, FileReader, InputStream, InputStreamReader}
 import java.util.Properties
 import scala.util.Random
+import org.slf4j.{Logger, LoggerFactory}
 
 object BooksProducer {
 
   private val TOPIC = "book_events"
+  val logger: Logger = LoggerFactory.getLogger(getClass)
+
 
   def main(args: Array[String]):Unit = {
 
@@ -33,6 +36,7 @@ object BooksProducer {
       }
       val record = new ProducerRecord[String, String](TOPIC, line)
       producer.send(record)
+      logger.info(s" ** Record sent: ${record.value()}")
       count += 1
     }
 
