@@ -5,14 +5,14 @@ The guide is structured in a chapter-wise format, each focusing on different asp
 ### Chapter Overview
 
 - **Chapter 0: Setting Up Your Flink Project**  
-  _This chapter covers the basics of setting up a Flink project, including environment setup and essential configurations._
-  _TODO : Work in progress
+  _This chapter covers the basics of setting up a Flink project, including environment setup and essential configurations.
+  _TODO : Work in progress._
 
 - **Chapter 1: Flink Fundamentals**  
   _Dive into the core concepts of Flink, exploring its unique features and capabilities in data processing._
-  _Refer c1 README.md for info._
+  _Refer c1 README.md for more info._
 
-- **Chapter 2: Data Read, Transformation, Write **  
+- **Chapter 2: Data Read, Transformation, Write**  
   _Learn about reading source data, transformation techniques and writing it to a sink and how to effectively process datasets using Flink._
 
 - ...
